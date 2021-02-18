@@ -1,0 +1,268 @@
+/* tag */
+p {
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+body{
+	background-color: white;
+}
+
+form {
+	display: block;
+}
+#header  {
+	width: 1000px;
+	height: 380px;
+	text-align: center;
+	background-image: url(img/header.png);
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	position: static;
+	margin-top: 1px;
+	border-radius: 100px;
+}
+
+.SentenceBlock{
+	padding: 5px;
+	margin-bottom : 20px;
+}
+
+/* table */
+
+.TableContainer{
+	width: 95%;
+	padding-left: 20px;
+}
+.TableTitle{
+
+}
+.TableStyle1 {
+	padding-left: 50px;
+	margin: 40px 0px;
+	border: solid #CC9900 1px;
+    background-color: #cdefff;  /* 背景色指定 */
+    border-collapse: collapse; 
+}
+
+.TableStyle1 th{
+	padding: .8em;
+	border: solid #CC9900 1px;
+    background-color: #FFFFFF;  /* 背景色指定 */
+    border-collapse: collapse; 
+}
+.TableStyle1 td{
+	padding: .5em 2em;
+	border: solid #CC9900 1px;
+    background-color: #FFFFEE;  /* 背景色指定 */
+    border-collapse: collapse; 
+}
+.TableStyle1 td:first-child{
+	width: 45%;
+	/*tdの一つ目の要素について効かせる*/
+}
+.TableStyle1 tr:hover{
+	/* width: 120%; */
+	height:5em;
+	/*tdの一つ目の要素について効かせる*/
+}
+.TableStyle1 td.tdColor{
+	padding: .5em 2em;
+	border: solid #CC9900 1px;
+    background-color: #FFEFD5;  /* 背景色指定 */
+    border-collapse: collapse; 
+}
+
+
+
+.partsOfImg1 {
+	width: 1000px;
+	height: 380px;
+	text-align: center;
+	background-image: url(img/header.png);
+	background-repeat: no-repeat;
+	background-position: -40px -40px;
+	<!-- 左上端が 0px 0pxからはじまる-->
+	height: 60px;
+	width: 100px;
+}
+
+
+.index_name {
+	margin-top: 20px; /*margin-bottom　下側に余白を設定*/
+    text-align: center;
+    margin-bottom: 15px; /*margin-bottom　下側に余白を設定*/
+}
+
+.container{ /*クラスを使用するときは「.」で始める*/
+    max-width: 980px; /*点が1400個で画像を表示する*/
+    margin: 0 auto; /*margin 外側の余白を指定  0→上下の余白　auto→左右の余白*/
+    padding: 0 20px; /*内側の余白を指定*/
+}
+
+div.container #main div.contexts {
+	font-size: 1.15em;
+}
+div.container #main div.contexts h1{
+	background-color: #FFFFEE;
+	border-left: solid .3em #CC9900;
+	border-bottom: solid .01em #CC9900;
+	padding: 5px;
+	padding-left: 25px;
+	margin-bottom: 40px;
+}
+div.container nav#menubar{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*marginの設定は利かなかった*/
+}
+nav ul li{ /*navの中のliタグに指定*/
+    list-style: none; /*箇条書きの点を消す*/
+    display: inline; /*箇条書きを横にする　block:縦並び　inline:横並び*/
+}
+nav{
+	margin-top: 25px;
+    text-align: center;
+    margin-bottom: 15px; /*margin-bottom　下側に余白を設定*/
+
+}
+nav ul a{
+    padding: 15px 30px;
+    text-decoration:none; /*デフォルトのアンダーバーを消す*/
+    color: #666 /*赤緑青を16進数を使って表現したもの　2桁ずつ赤66みどり666666同じ数字だと3桁に略せる*/
+/*    padding: 15px  30px 15px 30px;
+    padding: 15px  30px 20px;    */
+}
+/*マウスをあてた時の指定　疑似クラス→指定した要素が特定の状態にある場合にスタイルを適用するために*/
+nav li a:hover{ /*コロンを忘れずに！*/
+    border-bottom: 4px dotted brown    /*線の太さ　線の種類　線の色　指定の順番はバラバラでも大丈夫。*/
+    /*solid　直線　 dotted 点線*/
+}
+.popUp{
+	font-size: 1.2em;
+	background-color: lightgrey;
+	padding : 20px;
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,.5);
+	margin-bottom: 40px;
+}
+.popUpY{
+	font-size: 1.2em;
+	background-color: aliceblue;
+	padding : 20px;
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,.5);
+	margin-bottom: 40px;
+}
+.multicol {
+	columns: 2;
+	column-rule: 1px dotted #cdcdcd;
+	column-gap: 3em;
+	}
+.Padding { padding: 1em 2em }	
+.singleCol {
+	width: 80%;
+	margin: auto;
+}
+#footer ul#footermenu {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#footer ul#footermenu li {
+	color : #6f3700;			/*リンクがないテキスト部分の文字色*/
+	border-left-width: 1px;		/*各リンク間の区切り線太さ*/
+	border-left-style: solid;	/*各リンク間の区切り線スタイル*/
+	border-left-color: gray;	/*各リンク間の区切り線の色*/
+	padding-left: 6px;
+	padding-right: 4px;
+	display: inline;
+}
+
+#footer ul#footermenu li.last {
+	border-right-width: 1px;	/*リンク部分の一番右端に表示される線太さ*/
+	border-right-style: solid;	/*リンク部分の一番右端に表示される線スタイル*/
+	border-right-color: #999999;	/*リンク部分の一番右端に表示される線の色*/
+	padding-right: 6px;
+}
+
+#footer ul#footermenu li a {
+	color: gray;		/*文字色*/
+}
+
+#footer ul#footermenu li a:hover {
+	color : #6f3700;		/*マウスオーバー時の文字色*/
+}
+
+.footer_align {
+	margin-top: 20px; /*margin-bottom　下側に余白を設定*/
+    text-align: center;
+    margin-bottom: 15px; /*margin-bottom　下側に余白を設定*/
+}
+
+
+.setAlign{
+		text-align: center;
+}
+.BackColorB{
+	padding : 3px;
+	background-color: #99CCFF;
+	
+}
+
+/* 余白 */
+
+.MarginL10 { margin-left: 1em; }
+.MarginL20 { margin-left: 2em; }
+.MarginLR10 { margin-left: 1em; margin-right: 1em; }
+.MarginLR20 { margin-left: 2em; margin-right: 2em; }
+.MarginL30 { margin-left: 3em; }
+.Margin30 { margin-right: 3em; }
+.MarginT05 { margin-top: .5em; }
+.MarginB05 { margin-bottom: .5em; }
+.MarginTB05{ margin-top: .5em; margin-bottom: .5em; }
+.MarginTB10{ margin-top: 1em; margin-bottom: 1em; }
+.MarginTB00{ margin-top: 0; margin-bottom: 0; }
+.PaddinTB05em { padding: .5em 0; }
+.PaddinL05em { padding-left: .5em; }
+.PaddinL10em { padding-left: 1em; }
+.PaddinL15em { padding-left: 1.5em; }
+.PaddinLR10em { padding-left: 1em; padding-right: 1em; }
+.PaddinL20em { padding-left: 2em }
+.PaddingTB0{ margin-top: 0; margin-bottom: 0; }
+.PaddingTB05{ margin-top: .5em; margin-bottom: .5em; }
+.PaddingTB10{ padding-top: 1em; padding-bottom: 1em; }
+.PaddingL03{ padding-left: .3em; }
+.PaddingL10{ padding-left: 1em; }
+.PaddingL20{ padding-left: 2em; }
+.PaddingB10 { padding-bottom: 1em; }
+.PaddingB10{
+	padding-bottom: 10px;
+}
+
+/* flow chart */
+
+#demoFlow {
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+}
+#demoFlow li {
+	padding: 10px;
+	background: #a7cae4;
+}
+#demoFlow li+li {
+	position: relative;
+	margin-top: 70px;
+}
+#demoFlow li+li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -60px;
+	left:150px;
+	width: 100%;
+	height: 55px;
+	background: url(./img/arrow.png) no-repeat 5% 5%;
+}}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<title>index</title>
+<link rel="icon" type="image/png" href="./img/fav.png"></link>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<style>
+			.contact_form input:required:valid, .contact_form textarea:required:valid {
+				box-shadow: 0 0 .5em green;
+				border-color: green;
+			}
+			.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+				box-shadow: 0 0 .5em crimson;
+				border-color: crimson;
+			}
+			.form_hint {
+				background: crimson;
+				border-radius: .4em;
+				color: white;
+				margin-left: .5em;
+				padding: .3em .7em;
+				z-index: 999;
+				position: absolute;
+				display: none;
+			}
+			.form_hint::before { content: "\25C0"; color: crimson; position: absolute; top: 1px; left: -6px; }
+			.contact_form input:focus + .form_hint { display: inline; }
+			.contact_form input:required:valid + .form_hint { background: crimson; }
+			.contact_form input:required:valid + .form_hint::before { color: white; }
+</style>
+</head>
+
+<body>
+
+<a id="TopPage">ホームページ200269km</a>
+</div>
+
+<div id="header">
+</div>
+
+<div class="container">
+        <nav id = "menubar"> 
+            <ul> <!-- ul 箇条書き　羅列書き -->
+                <li><!-- 羅列されるものを書くときは　li タグの中に書く -->
+                    <a href="index.html">top</a>
+                </li>
+                <li>
+                    <a href="position.html">position name</a>
+                </li>
+                <li>
+                    <a href="phrases.html">SE phrases</a>
+                </li>
+                <li>
+                    <a href="form.html">request form</a>
+                </li>
+            </ul>
+        </nav>
+<div id="main">
+	<div class="singleCol">
+		<div class="contexts">
+
+<h1>リクエストフォーム</h1>
+	<div class="SentenceBlock">
+		<p>感想やリクエストを送ってくださるとうれしいです。</p>
+		<p>下記フォームから送っていただけます。</p>
+	</div>
+<div class="contact_form"> <!--index_name -->
+<form class="" method="get">
+			<p><span class="MarginL10">ハンドルネーム</span><input class="MarginL10" type="text" name="namae" required></p>
+			<p><span class="MarginL10">種類</span><select class="MarginL10 PaddinTB05em" name="blood">
+				<option value="ForeignCompany">外資系について
+				<option value="English">SEの英語表現
+				<option value="Comments">感想
+				<option value="Other">その他
+			</select></p>
+
+			<p class="MarginTB10" style = "margin-bottom: 0">リクエスト内容: </p>
+			<textarea name="comments" cols="40" rows="20" required></textarea>
+			<div>
+			<input type="submit" value="送信する">
+			<input type="reset" value="クリア">
+			</div>
+</form>
+
+</div> <!-- context -->
+</div>  <!-- singleCol -->
+</div> <!-- main -->
+
+<div class="footer_align">
+<p>学籍番号　200269　のHomePageです</p>
+<a href="index.html">TopPage</a>
+</div>
+<!--// フッターメニュー end【↑ここまで】  //-->
+
+<!--// コピーライト start【↓ここから変更・削除可】 //-->
+<div id="copy_r">Copyright &#169; 2020 &#160;*200269KM* &#160;All&#160;rights&#160;reserved.</div>
+<!--// コピーライト &copy; でもいける  //-->
+
+
+</div><!--main //-->
+</div><!--container //-->
+</body>
